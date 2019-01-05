@@ -1,0 +1,11 @@
+/vendor
+.DS_Store
+.env
+.env.*.php
+.env.php
+plugins/
+themes/
+storage/
+modules/
+config/
+
