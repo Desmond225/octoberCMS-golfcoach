@@ -1,0 +1,6 @@
+columns:
+    round_type:
+        label: 'admin.statistics::lang.label.rounds.type'
+        type: text
+        searchable: true
+        sortable: true

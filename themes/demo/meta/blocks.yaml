@@ -1,0 +1,68 @@
+landing:
+  name: landing
+  description: Start section
+  icon: icon-circle
+  fields:
+    section:
+      label: landing page
+      type: section
+      cssClass: 'p-a m-y control-scrollpanel'
+    header:
+      label: Header title
+      type: text
+      span: full
+    entry: 
+      label: Entry label
+      type: text
+      span: full
+    blog:
+      label: Blog label
+      type: text
+      span: full
+    rounds:
+      label: Rounds button label
+      type: text
+      span: full
+
+entry:
+  name: entry
+  description: Entry section
+  icon: icon-circle
+  fields:
+    section:
+      label: entry page
+      type: section
+      cssClass: 'p-a m-y control-scrollpanel'
+    type:
+      label: Type of practice session
+      type: dropdown
+      options: 
+        driving_range: driving range
+        short game_session: short game session
+        course_play: course play
+        course_play_and_practice_session: course play and practice session
+    hours:
+      label: Hours of practice
+      type: number
+      span: left
+    enter_scores:
+      label: Enter scores
+      type: balloon-selector
+      options:
+        9_holes: 9 holes
+        18_holes: 18 holes
+
+        
+      span: full
+    entry: 
+      label: Entry label
+      type: text
+      span: full
+    blog:
+      label: Blog label
+      type: text
+      span: full
+    rounds:
+      label: Rounds button label
+      type: text
+      span: full

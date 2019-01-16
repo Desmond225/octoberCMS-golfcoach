@@ -3,9 +3,9 @@
 .env
 .env.*.php
 .env.php
-plugins/
-themes/
+# plugins/
+# themes/
 storage/
 modules/
 config/
-
+node_modules/

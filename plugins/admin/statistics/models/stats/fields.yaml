@@ -1,0 +1,5 @@
+fields:
+    score:
+        label: 'admin.statistics::lang.label.stats.score'
+        span: auto
+        type: number

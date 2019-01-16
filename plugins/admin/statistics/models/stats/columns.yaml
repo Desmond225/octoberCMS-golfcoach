@@ -1,0 +1,11 @@
+columns:
+    round_id:
+        label: 'admin.statistics::lang.label.stats.round'
+        type: number
+        searchable: true
+        sortable: true
+    score:
+        label: 'admin.statistics::lang.label.stats.score'
+        type: number
+        searchable: true
+        sortable: true

@@ -1,0 +1,32 @@
+[viewBag]
+snippetCode = "landing"
+snippetName = "landing"
+==
+
+<style>
+body, html {
+    background: rgba(0,255,128, 0.6);
+}
+
+.landing-menu .btn {
+    margin: 25% 0;
+    border-radius: 0%;
+}
+
+.landing-menu h1::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: black;
+}
+</style>
+<div class="container">
+    <div class="landing-menu">
+        <h1>{{data.header}}</h1>
+        <a href="/entry" class="btn btn-info btn-lg btn-block">{{data.entry}}</a>
+        <a class="btn btn-info btn-lg btn-block">{{data.blog}}</a>
+        <a class="btn btn-info btn-lg btn-block">{{data.rounds}}</a>
+
+</div>  
+</div>
+

@@ -1,0 +1,21 @@
+columns:
+    round_id:
+        label: 'round ID'
+        type: number
+        searchable: true
+        sortable: true
+    score:
+        label: score
+        type: number
+        searchable: true
+        sortable: true
+    score_to_par:
+        label: 'score to par'
+        type: number
+        searchable: true
+        sortable: true
+    date:
+        label: date
+        type: number
+        searchable: true
+        sortable: true

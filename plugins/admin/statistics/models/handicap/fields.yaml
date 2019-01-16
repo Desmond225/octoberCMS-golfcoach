@@ -1,0 +1,24 @@
+fields:
+    hcp_old:
+        label: 'HCP old'
+        span: auto
+        placeholder: hcp_old
+        required: 1
+        type: number
+    hcp_new:
+        label: 'HCP new'
+        span: auto
+        placeholder: hcp_new
+        required: 1
+        type: number
+    course_id:
+        label: 'Course ID'
+        span: auto
+        placeholder: 'course id'
+        required: 1
+        type: dropdown
+    date:
+        label: Date
+        mode: date
+        span: auto
+        type: datepicker

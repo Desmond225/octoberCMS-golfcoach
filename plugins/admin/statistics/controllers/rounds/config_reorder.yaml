@@ -1,0 +1,4 @@
+title: Rounds
+modelClass: Admin\Statistics\Models\Rounds
+toolbar:
+    buttons: reorder_toolbar

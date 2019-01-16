@@ -1,0 +1,4 @@
+title: Stats
+modelClass: Admin\Statistics\Models\Stats
+toolbar:
+    buttons: reorder_toolbar

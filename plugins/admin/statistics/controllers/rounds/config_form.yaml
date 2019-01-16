@@ -1,0 +1,10 @@
+name: Rounds
+form: $/admin/statistics/models/rounds/fields.yaml
+modelClass: Admin\Statistics\Models\Rounds
+defaultRedirect: admin/statistics/rounds
+create:
+    redirect: 'admin/statistics/rounds/update/:id'
+    redirectClose: admin/statistics/rounds
+update:
+    redirect: admin/statistics/rounds
+    redirectClose: admin/statistics/rounds

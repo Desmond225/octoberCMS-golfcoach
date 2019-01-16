@@ -1,0 +1,5 @@
+fields:
+    round_type:
+        label: 'Round type'
+        span: auto
+        type: text

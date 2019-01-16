@@ -1,0 +1,10 @@
+name: Stats
+form: $/admin/statistics/models/stats/fields.yaml
+modelClass: Admin\Statistics\Models\Stats
+defaultRedirect: admin/statistics/stats
+create:
+    redirect: 'admin/statistics/stats/update/:id'
+    redirectClose: admin/statistics/stats
+update:
+    redirect: admin/statistics/stats
+    redirectClose: admin/statistics/stats

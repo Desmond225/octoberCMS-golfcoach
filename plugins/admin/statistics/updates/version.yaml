@@ -1,0 +1,35 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table admin_statistics_'
+    - builder_table_create_admin_statistics_.php
+1.0.3:
+    - 'Updated table admin_statistics_'
+    - builder_table_update_admin_statistics_.php
+1.0.4:
+    - 'Updated table admin_statistics_'
+    - builder_table_update_admin_statistics__2.php
+1.0.5:
+    - 'Updated table admin_statistics_'
+    - builder_table_update_admin_statistics__3.php
+1.0.6:
+    - 'Updated table admin_statistics_'
+    - builder_table_update_admin_statistics_rounds.php
+1.0.7:
+    - 'Created table admin_statistics_round_type'
+    - builder_table_create_admin_statistics_round_type.php
+1.0.8:
+    - 'Created table admin_statistics_course'
+    - builder_table_create_admin_statistics_course.php
+1.0.9:
+    - 'Created table admin_statistics_stats'
+    - builder_table_create_admin_statistics_stats.php
+1.0.10:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_2.php
+1.0.11:
+    - 'Drop table admin_statistics_round_type'
+    - builder_table_delete_admin_statistics_round_type.php
+1.0.12:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_3.php

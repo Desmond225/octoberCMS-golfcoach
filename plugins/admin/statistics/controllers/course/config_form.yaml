@@ -1,0 +1,10 @@
+name: Course
+form: $/admin/statistics/models/course/fields.yaml
+modelClass: Admin\Statistics\Models\Course
+defaultRedirect: admin/statistics/course
+create:
+    redirect: 'admin/statistics/course/update/:id'
+    redirectClose: admin/statistics/course
+update:
+    redirect: admin/statistics/course
+    redirectClose: admin/statistics/course
