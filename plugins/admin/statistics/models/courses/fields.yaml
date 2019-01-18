@@ -1,0 +1,9 @@
+fields:
+    name:
+        label: 'Course name'
+        span: auto
+        type: text
+    par:
+        label: par
+        span: auto
+        type: number

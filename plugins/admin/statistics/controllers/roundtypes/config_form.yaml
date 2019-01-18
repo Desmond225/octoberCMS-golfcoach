@@ -1,0 +1,10 @@
+name: RoundTypes
+form: $/admin/statistics/models/roundtypes/fields.yaml
+modelClass: Admin\Statistics\Models\RoundTypes
+defaultRedirect: admin/statistics/roundtypes
+create:
+    redirect: 'admin/statistics/roundtypes/update/:id'
+    redirectClose: admin/statistics/roundtypes
+update:
+    redirect: admin/statistics/roundtypes
+    redirectClose: admin/statistics/roundtypes

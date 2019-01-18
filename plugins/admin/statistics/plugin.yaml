@@ -7,10 +7,14 @@ plugin:
 navigation:
     main-menu-item:
         label: 'admin.statistics::lang.plugin.name'
-        url: admin/statistics/rounds
+        url: admin/statistics/stats
         icon: icon-life-ring
         sideMenu:
-            side-menu-stats:
-                label: Stats
-                url: admin/statistics/stats
-                icon: icon-sitemap
+            side-menu-rounds:
+                label: rounds
+                url: admin/statistics/rounds
+                icon: icon-list
+            side-menu-item-courses:
+                label: Courses
+                url: /admin/statistics/courses
+                icon: icon-flag-checkered

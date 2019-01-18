@@ -1,6 +1,6 @@
-list: $/admin/statistics/models/course/columns.yaml
-modelClass: Admin\Statistics\Models\Course
-title: Course
+list: $/admin/statistics/models/courses/columns.yaml
+modelClass: Admin\Statistics\Models\Courses
+title: Courses
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'admin/statistics/course/update/:id'
+recordUrl: 'admin/statistics/courses/update/:id'

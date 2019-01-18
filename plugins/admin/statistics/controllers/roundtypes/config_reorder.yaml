@@ -1,0 +1,4 @@
+title: RoundTypes
+modelClass: Admin\Statistics\Models\RoundTypes
+toolbar:
+    buttons: reorder_toolbar

@@ -3,7 +3,7 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class Rounds extends Controller
+class RoundTypes extends Controller
 {
     public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'    ];
     
@@ -14,6 +14,5 @@ class Rounds extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-rounds');
     }
 }

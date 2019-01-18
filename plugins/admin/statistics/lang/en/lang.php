@@ -13,6 +13,7 @@
         ],
         'rounds' => [
             'type' => 'Round type',
+            'course' => 'Course',
         ],
     ],
 ];

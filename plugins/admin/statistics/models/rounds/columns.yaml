@@ -1,6 +1,35 @@
 columns:
-    round_type:
-        label: 'admin.statistics::lang.label.rounds.type'
+    course_id:
+        label: Course
         type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: course
+    date:
+        label: date
+        type: date
+        searchable: true
+        sortable: true
+    tee:
+        label: tee
+        type: text
+        searchable: true
+        sortable: true
+    score:
+        label: score
+        type: text
+        searchable: true
+        sortable: true
+    round_type_id:
+        label: 'round type'
+        type: number
+        searchable: true
+        sortable: true
+        select: name
+        relation: round_type
+    id:
+        label: 'Round ID'
+        type: number
         searchable: true
         sortable: true

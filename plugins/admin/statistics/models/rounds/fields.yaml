@@ -1,5 +1,22 @@
 fields:
-    round_type:
-        label: 'Round type'
+    score:
+        label: Score
+        span: auto
+        type: number
+    date:
+        label: Date
+        mode: datetime
+        span: auto
+        type: datepicker
+    tee:
+        label: Tee
         span: auto
         type: text
+    round_type_id:
+        label: 'Round type'
+        span: auto
+        type: dropdown
+    course_id:
+        label: 'Course id'
+        span: auto
+        type: dropdown

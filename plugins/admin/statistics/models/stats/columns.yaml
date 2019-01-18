@@ -1,5 +1,5 @@
 columns:
-    round_id:
+    id:
         label: 'admin.statistics::lang.label.stats.round'
         type: number
         searchable: true

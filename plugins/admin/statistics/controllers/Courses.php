@@ -3,7 +3,7 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class Course extends Controller
+class Courses extends Controller
 {
     public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'    ];
     
@@ -14,5 +14,6 @@ class Course extends Controller
     public function __construct()
     {
         parent::__construct();
+        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-item-courses');
     }
 }
