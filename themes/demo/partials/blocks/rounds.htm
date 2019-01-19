@@ -19,6 +19,7 @@ function onStart() {
 
 ==
 
+<div class="container">
 <h1>{{data.header}}</h1>
 
 <table class="table table-striped">
@@ -30,6 +31,9 @@ function onStart() {
         <th scope="col">Holes</th>
         <th scope="col"><a href="{{ url }}order=score">Score</a></th>
         <th scope="col">Type</th>
+        <th scope="col">Hcp Old</th>
+        <th scope="col">Hcp New</th>
+
       </tr>
     </thead>
     <tbody>
@@ -41,8 +45,11 @@ function onStart() {
         <td>{{round.holes_played.holes_played}}</td>
         <td>{{round.score}}</td>
         <td>{{round.round_type.name}}</td>
+        <td>{{round.hcp_old}}</td>
+        <td>{{round.hcp_old}}</td>
       </tr>
 
       {% endfor %}
     </tbody>
   </table>
+</div>

@@ -42,3 +42,13 @@ columns:
         sortable: true
         select: tee_color
         relation: tee_color
+    hcp_old:
+        label: 'hcp old'
+        type: number
+        searchable: true
+        sortable: true
+    hcp_new:
+        label: 'hcp new'
+        type: number
+        searchable: true
+        sortable: true

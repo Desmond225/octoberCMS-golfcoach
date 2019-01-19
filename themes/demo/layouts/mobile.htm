@@ -22,6 +22,10 @@ description = "Mobile layout"
         {repeater name="sections" groups="~/themes/demo/meta/blocks.yaml" tab="Blocks"}
         {variable name="_dummy" type="text"}{/variable}
     {/repeater}
+    
+    <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
 
         <!-- Content -->
         <section id="layout-content" class="layout-content">
