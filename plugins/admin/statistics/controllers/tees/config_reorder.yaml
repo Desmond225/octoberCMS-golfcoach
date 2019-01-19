@@ -1,0 +1,4 @@
+title: Tees
+modelClass: Admin\Statistics\Models\Tees
+toolbar:
+    buttons: reorder_toolbar

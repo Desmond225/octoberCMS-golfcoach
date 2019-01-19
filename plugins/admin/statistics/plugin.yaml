@@ -18,3 +18,19 @@ navigation:
                 label: Courses
                 url: /admin/statistics/courses
                 icon: icon-flag-checkered
+            side-menu-stats:
+                label: Stats
+                url: /admin/statistics/stats
+                icon: icon-sitemap
+            side-menu-roundtypes:
+                label: 'Round types'
+                url: /admin/statistics/roundtypes
+                icon: icon-sitemap
+            side-menu-holes:
+                label: 'Holes played'
+                url: /admin/statistics/holesplayed
+                icon: icon-sitemap
+            side-menu-tees:
+                label: 'Tee colors'
+                url: /admin/statistics/tees
+                icon: icon-filter

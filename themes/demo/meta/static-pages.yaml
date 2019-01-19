@@ -2,3 +2,4 @@ static-pages:
     landing: {  }
     index: {  }
     entry: {  }
+    rounds: {  }

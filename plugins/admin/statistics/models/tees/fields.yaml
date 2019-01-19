@@ -1,5 +1,5 @@
 fields:
-    name:
-        label: 'Name of statistics'
+    tee_color:
+        label: 'Tee color'
         span: auto
         type: text

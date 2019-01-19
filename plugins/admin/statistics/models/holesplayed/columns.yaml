@@ -1,0 +1,6 @@
+columns:
+    holes_played:
+        label: Holes
+        type: number
+        searchable: true
+        sortable: true

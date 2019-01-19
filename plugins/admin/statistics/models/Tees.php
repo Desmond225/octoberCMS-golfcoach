@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class RoundTypes extends Model
+class Tees extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -19,12 +19,11 @@ class RoundTypes extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'admin_statistics_round_types';
+    public $table = 'admin_statistics_tees';
 
     /**
      * @var array Validation rules
      */
     public $rules = [
     ];
-
 }

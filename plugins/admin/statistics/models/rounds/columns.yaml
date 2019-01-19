@@ -11,11 +11,6 @@ columns:
         type: date
         searchable: true
         sortable: true
-    tee:
-        label: tee
-        type: text
-        searchable: true
-        sortable: true
     score:
         label: score
         type: text
@@ -33,3 +28,17 @@ columns:
         type: number
         searchable: true
         sortable: true
+    holes_played_id:
+        label: Holes
+        type: number
+        searchable: true
+        sortable: true
+        select: holes_played
+        relation: holes_played
+    tee_color_id:
+        label: 'Tee color'
+        type: number
+        searchable: true
+        sortable: true
+        select: tee_color
+        relation: tee_color

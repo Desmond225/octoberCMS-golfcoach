@@ -1,6 +1,6 @@
 columns:
-    name:
-        label: name
+    tee_color:
+        label: 'Tee color'
         type: text
         searchable: true
         sortable: true

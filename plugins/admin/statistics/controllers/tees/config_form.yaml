@@ -1,0 +1,10 @@
+name: Tees
+form: $/admin/statistics/models/tees/fields.yaml
+modelClass: Admin\Statistics\Models\Tees
+defaultRedirect: admin/statistics/tees
+create:
+    redirect: 'admin/statistics/tees/update/:id'
+    redirectClose: admin/statistics/tees
+update:
+    redirect: admin/statistics/tees
+    redirectClose: admin/statistics/tees

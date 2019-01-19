@@ -1,0 +1,48 @@
+description = "rounds"
+
+[viewBag]
+snippetCode = "rounds"
+snippetName = "rounds"
+==
+
+use Admin\Statistics\Models\Rounds;
+
+function onStart() {
+
+    $this['url'] = url('/rounds').'?';
+    $this["rounds"] = Rounds::orderBy('date','DESC')->get();
+    if(Input::get('order')) Session::put('filter.order', Input::get('order'));
+
+    $this["order"] = Session::get('filter.order');
+    echo(Session::get('filter.page'));
+}
+
+==
+
+<h1>{{data.header}}</h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col"><a href="{{ url }}order=date">Date</a></th>
+        <th scope="col">Course</th>
+        <th scope="col">Tee</th>
+        <th scope="col">Holes</th>
+        <th scope="col"><a href="{{ url }}order=score">Score</a></th>
+        <th scope="col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for round in rounds %}
+      <tr>
+        <th scope="row">{{round.date}}</th>
+        <td>{{round.course.name}}</td>
+        <td>{{round.tee_color.tee_color}}</td>
+        <td>{{round.holes_played.holes_played}}</td>
+        <td>{{round.score}}</td>
+        <td>{{round.round_type.name}}</td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>

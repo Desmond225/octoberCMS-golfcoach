@@ -14,5 +14,6 @@ class Stats extends Controller
     public function __construct()
     {
         parent::__construct();
+        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-stats');
     }
 }

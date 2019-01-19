@@ -23,7 +23,6 @@ landing:
       label: Rounds button label
       type: text
       span: full
-
 entry:
   name: entry
   description: Entry section
@@ -51,15 +50,30 @@ entry:
       options:
         9_holes: 9 holes
         18_holes: 18 holes
-
-        
-      span: full
+        span: full
     entry: 
       label: Entry label
       type: text
       span: full
     blog:
       label: Blog label
+      type: text
+      span: full
+    rounds:
+      label: Rounds button label
+      type: text
+      span: full
+rounds:
+  name: rounds
+  description: Rounds section
+  icon: icon-circle
+  fields:
+    section:
+      label: rounds partials
+      type: section
+      cssClass: 'p-a m-y control-scrollpanel'
+    header:
+      label: Header title
       type: text
       span: full
     rounds:

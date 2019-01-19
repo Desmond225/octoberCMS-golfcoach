@@ -1,0 +1,4 @@
+title: HolesPlayed
+modelClass: Admin\Statistics\Models\HolesPlayed
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: HolesPlayed
+form: $/admin/statistics/models/holesplayed/fields.yaml
+modelClass: Admin\Statistics\Models\HolesPlayed
+defaultRedirect: admin/statistics/holesplayed
+create:
+    redirect: 'admin/statistics/holesplayed/update/:id'
+    redirectClose: admin/statistics/holesplayed
+update:
+    redirect: admin/statistics/holesplayed
+    redirectClose: admin/statistics/holesplayed

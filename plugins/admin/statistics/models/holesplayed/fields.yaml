@@ -1,0 +1,5 @@
+fields:
+    holes_played:
+        label: Holes
+        span: auto
+        type: number
