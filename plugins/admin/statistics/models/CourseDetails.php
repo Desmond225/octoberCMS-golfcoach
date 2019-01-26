@@ -32,6 +32,16 @@ class CourseDetails extends Model
         return $courseVenues;
     }
 
+    function getCoursePartIdOptions() {
+        $courseVenues = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        return $courseVenues;
+    }
+
+    function getTeeColorIdOptions() {
+        $teeColors = Tees::orderBy('tee_color')->lists('tee_color', 'id');
+        return $teeColors;
+    }
+
     public $belongsTo = [
         'round_type' => ['Admin\Statistics\Models\RoundTypes'],
         'course_venue' => ['Admin\Statistics\Models\CourseVenues'],

@@ -1,12 +1,16 @@
 fields:
+    course_venue_id:
+        label: 'course venue'
+        span: auto
+        type: dropdown
     course_part_id:
         label: 'course part'
         span: auto
-        type: number
+        type: dropdown
     tee_color_id:
         label: tee
         span: auto
-        type: number
+        type: dropdown
     par:
         label: par
         span: auto
@@ -15,15 +19,11 @@ fields:
         label: length
         span: auto
         type: number
-    cr:
-        label: cr
-        span: auto
-        type: number
     sr:
         label: sr
         span: auto
         type: number
-    course_venue_id:
-        label: 'course venue'
+    cr:
+        label: cr
         span: auto
-        type: dropdown
+        type: number
