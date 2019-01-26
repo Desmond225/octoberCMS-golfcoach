@@ -27,3 +27,7 @@ fields:
         label: cr
         span: auto
         type: number
+    name:
+        label: name
+        span: auto
+        type: text

@@ -1,9 +1,11 @@
 columns:
     course_venue_id:
         label: 'Course venue'
-        type: switch
+        type: number
         searchable: true
         sortable: true
+        select: course_venue
+        relation: course_venue
     date:
         label: date
         type: date
@@ -50,8 +52,17 @@ columns:
         type: number
         searchable: true
         sortable: true
-    course_id:
-        label: 'course id'
+    course_part_id:
+        label: 'course part'
         type: number
         searchable: true
         sortable: true
+        select: course_part
+        relation: course_part
+    course_part_id_2:
+        label: 'course part 2'
+        type: number
+        searchable: true
+        sortable: true
+        select: course_part
+        relation: course_part

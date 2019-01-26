@@ -45,3 +45,8 @@ columns:
         sortable: true
         select: course_venue
         relation: course_venue
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true

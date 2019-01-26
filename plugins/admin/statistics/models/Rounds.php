@@ -32,8 +32,13 @@ class Rounds extends Model
         return $roundTypes;
     }
 
+    // function getCourseIdOptions() {
+    //     $courseId = CourseDetails::orderBy('name')->lists('name', 'id');
+    //     return $courseId;
+    // }
+
     function getCourseVenueIdOptions() {
-        $courseVenue = CourseVenues::orderBy('name')->lists('name', 'id');
+        $courseVenue = CourseVenues::orderBy('course_venue')->lists('course_venue', 'id');
         return $courseVenue;
     }
 
@@ -47,14 +52,33 @@ class Rounds extends Model
         return $teeColors;
     }
 
-    function getCourseIdOptions() {
-        $course = Courses::orderBy('name')->lists('name', 'id');
-        return $course;
+    function getFront9IdOptions() {
+        $front9 = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        return $front9;
     }
+
+    function getBack9IdOptions() {
+        $back9 = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        return $back9;
+    }
+
+    function getCoursePartIdOptions() {
+        $coursePart = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        return $coursePart;
+    }
+
+    function getCoursePartId2Options() {
+        $coursePart2 = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        return $coursePart2;
+    }
+
+
+
 
     public $belongsTo = [
         'round_type' => ['Admin\Statistics\Models\RoundTypes'],
-        'course' => ['Admin\Statistics\Models\CourseVenues'],
+        'course_venue' => ['Admin\Statistics\Models\CourseVenues'],
+        'course_part' => ['Admin\Statistics\Models\CourseParts'],
         'holes_played' => ['Admin\Statistics\Models\HolesPlayed'],
         'tee_color' => ['Admin\Statistics\Models\Tees'],
     ];
