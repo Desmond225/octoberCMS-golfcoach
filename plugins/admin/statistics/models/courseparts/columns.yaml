@@ -1,0 +1,12 @@
+columns:
+    course_part:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    id:
+        label: id
+        type: number
+        searchable: true
+        invisible: false
+        sortable: true

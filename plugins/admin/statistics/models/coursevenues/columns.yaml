@@ -1,0 +1,11 @@
+columns:
+    course_venue:
+        label: name
+        type: text
+        searchable: true
+        sortable: true
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true

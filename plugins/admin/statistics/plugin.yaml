@@ -14,10 +14,14 @@ navigation:
                 label: rounds
                 url: admin/statistics/rounds
                 icon: icon-list
-            side-menu-item-courses:
-                label: Courses
-                url: /admin/statistics/courses
+            side-menu-item-course-venues:
+                label: 'Course venues'
+                url: /admin/statistics/coursevenues
                 icon: icon-flag-checkered
+            side-menu-course-parts:
+                label: 'Course parts'
+                url: /admin/statistics/courseparts
+                icon: icon-flag
             side-menu-stats:
                 label: Stats
                 url: /admin/statistics/stats
@@ -34,3 +38,7 @@ navigation:
                 label: 'Tee colors'
                 url: /admin/statistics/tees
                 icon: icon-filter
+            side-menu-coursedetails:
+                label: 'Course Details'
+                url: /admin/statistics/coursedetails
+                icon: icon-book

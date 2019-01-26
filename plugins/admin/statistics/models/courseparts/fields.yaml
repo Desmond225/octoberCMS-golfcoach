@@ -1,0 +1,5 @@
+fields:
+    course_part:
+        label: name
+        span: auto
+        type: text

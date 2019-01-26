@@ -1,0 +1,47 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    course_part_id:
+        label: 'course id'
+        type: number
+        searchable: true
+        sortable: true
+        select: course_part
+        relation: course_part
+    tee_color_id:
+        label: 'tee id'
+        type: number
+        searchable: true
+        sortable: true
+        select: tee_color
+        relation: tee_color
+    par:
+        label: par
+        type: number
+        searchable: true
+        sortable: true
+    cr:
+        label: cr
+        type: number
+        searchable: true
+        sortable: true
+    sr:
+        label: sr
+        type: number
+        searchable: true
+        sortable: true
+    length:
+        label: length
+        type: number
+        searchable: true
+        sortable: true
+    course_venue_id:
+        label: 'course venue id'
+        type: number
+        searchable: true
+        sortable: true
+        select: course_venue
+        relation: course_venue

@@ -1,0 +1,4 @@
+title: CourseVenues
+modelClass: Admin\Statistics\Models\CourseVenues
+toolbar:
+    buttons: reorder_toolbar

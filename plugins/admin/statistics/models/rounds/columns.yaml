@@ -1,11 +1,9 @@
 columns:
-    course_id:
-        label: Course
-        type: text
+    course_venue_id:
+        label: 'Course venue'
+        type: switch
         searchable: true
         sortable: true
-        select: name
-        relation: course
     date:
         label: date
         type: date
@@ -49,6 +47,11 @@ columns:
         sortable: true
     hcp_new:
         label: 'hcp new'
+        type: number
+        searchable: true
+        sortable: true
+    course_id:
+        label: 'course id'
         type: number
         searchable: true
         sortable: true

@@ -32,9 +32,9 @@ class Rounds extends Model
         return $roundTypes;
     }
 
-    function getCourseIdOptions() {
-        $courses = Courses::orderBy('name')->lists('name', 'id');
-        return $courses;
+    function getCourseVenueIdOptions() {
+        $courseVenue = CourseVenues::orderBy('name')->lists('name', 'id');
+        return $courseVenue;
     }
 
     function getHolesPlayedOptions()  {
@@ -47,9 +47,14 @@ class Rounds extends Model
         return $teeColors;
     }
 
+    function getCourseIdOptions() {
+        $course = Courses::orderBy('name')->lists('name', 'id');
+        return $course;
+    }
+
     public $belongsTo = [
         'round_type' => ['Admin\Statistics\Models\RoundTypes'],
-        'course' => ['Admin\Statistics\Models\Courses'],
+        'course' => ['Admin\Statistics\Models\CourseVenues'],
         'holes_played' => ['Admin\Statistics\Models\HolesPlayed'],
         'tee_color' => ['Admin\Statistics\Models\Tees'],
     ];

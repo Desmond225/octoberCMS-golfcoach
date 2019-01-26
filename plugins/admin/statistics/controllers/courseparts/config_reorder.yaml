@@ -1,0 +1,4 @@
+title: CourseParts
+modelClass: Admin\Statistics\Models\CourseParts
+toolbar:
+    buttons: reorder_toolbar

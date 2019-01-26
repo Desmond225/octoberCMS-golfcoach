@@ -1,0 +1,4 @@
+title: CourseDetails
+modelClass: Admin\Statistics\Models\CourseDetails
+toolbar:
+    buttons: reorder_toolbar

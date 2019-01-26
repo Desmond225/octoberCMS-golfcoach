@@ -1,0 +1,29 @@
+fields:
+    course_part_id:
+        label: 'course part'
+        span: auto
+        type: number
+    tee_color_id:
+        label: tee
+        span: auto
+        type: number
+    par:
+        label: par
+        span: auto
+        type: number
+    length:
+        label: length
+        span: auto
+        type: number
+    cr:
+        label: cr
+        span: auto
+        type: number
+    sr:
+        label: sr
+        span: auto
+        type: number
+    course_venue_id:
+        label: 'course venue'
+        span: auto
+        type: dropdown

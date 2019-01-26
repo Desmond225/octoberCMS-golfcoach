@@ -5,18 +5,22 @@ fields:
         span: auto
         required: 1
         type: datepicker
+    holes_played:
+        label: 'Holes played'
+        span: auto
+        required: 1
+        type: dropdown
+    course_venue_id:
+        label: 'Course venue'
+        span: auto
+        required: 1
+        type: dropdown
     course_id:
         label: Course
         span: auto
-        required: 1
         type: dropdown
     tee_color_id:
         label: 'Tee color'
-        span: auto
-        required: 1
-        type: dropdown
-    holes_played:
-        label: 'Holes played'
         span: auto
         required: 1
         type: dropdown
