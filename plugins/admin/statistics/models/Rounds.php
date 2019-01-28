@@ -68,7 +68,7 @@ class Rounds extends Model
     }
 
     function getCoursePartId2Options() {
-        $coursePart2 = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        $coursePart2 = Back9::orderBy('course_part')->lists('course_part', 'id');
         return $coursePart2;
     }
 
@@ -79,6 +79,7 @@ class Rounds extends Model
         'round_type' => ['Admin\Statistics\Models\RoundTypes'],
         'course_venue' => ['Admin\Statistics\Models\CourseVenues'],
         'course_part' => ['Admin\Statistics\Models\CourseParts'],
+        'back_9' => ['Admin\Statistics\Models\Back9'],
         'holes_played' => ['Admin\Statistics\Models\HolesPlayed'],
         'tee_color' => ['Admin\Statistics\Models\Tees'],
     ];

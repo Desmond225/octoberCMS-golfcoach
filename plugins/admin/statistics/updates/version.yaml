@@ -180,3 +180,21 @@
 1.0.61:
     - 'Updated table admin_statistics_rounds'
     - builder_table_update_admin_statistics_rounds_18.php
+1.0.62:
+    - 'Updated table admin_statistics_course_parts'
+    - builder_table_update_admin_statistics_course_parts_2.php
+1.0.63:
+    - 'Updated table admin_statistics_course_parts'
+    - builder_table_update_admin_statistics_course_parts_3.php
+1.0.64:
+    - 'Created table admin_statistics_back_9'
+    - builder_table_create_admin_statistics_back_9.php
+1.0.65:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_19.php
+1.0.66:
+    - 'Updated table admin_statistics_back_9'
+    - builder_table_update_admin_statistics_back_9.php
+1.0.67:
+    - 'Updated table admin_statistics_back_9'
+    - builder_table_update_admin_statistics_back_9_2.php

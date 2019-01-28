@@ -59,10 +59,10 @@ columns:
         sortable: true
         select: course_part
         relation: course_part
-    course_part_id_2:
+    back_9_id:
         label: 'course part 2'
         type: number
         searchable: true
         sortable: true
-        select: course_part
-        relation: course_part
+        select: back_9
+        relation: back_9

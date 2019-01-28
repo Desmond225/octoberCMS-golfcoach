@@ -24,7 +24,7 @@ fields:
         label: 'Front 9'
         span: left
         type: dropdown
-    course_part_id_2:
+    back_9_id:
         label: 'Back 9'
         span: auto
         trigger:

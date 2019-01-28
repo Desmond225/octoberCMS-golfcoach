@@ -1,0 +1,12 @@
+list: $/admin/statistics/models/back9/columns.yaml
+modelClass: Admin\Statistics\Models\Back9
+title: BackNine
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'admin/statistics/backnine/update/:id'
