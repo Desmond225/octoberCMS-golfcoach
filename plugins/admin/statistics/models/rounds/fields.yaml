@@ -24,7 +24,7 @@ fields:
         label: 'Front 9'
         span: left
         type: dropdown
-    back_9_id:
+    back_nine_id:
         label: 'Back 9'
         span: auto
         trigger:

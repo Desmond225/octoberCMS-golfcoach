@@ -1,5 +1,5 @@
-list: $/admin/statistics/models/back9/columns.yaml
-modelClass: Admin\Statistics\Models\Back9
+list: $/admin/statistics/models/backnine/columns.yaml
+modelClass: Admin\Statistics\Models\BackNine
 title: BackNine
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true

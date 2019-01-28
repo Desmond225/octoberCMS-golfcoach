@@ -14,6 +14,6 @@ class BackNine extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-back9');
+        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-back-nine');
     }
 }

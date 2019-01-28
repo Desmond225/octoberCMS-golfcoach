@@ -1,6 +1,6 @@
 name: BackNine
-form: $/admin/statistics/models/back9/fields.yaml
-modelClass: Admin\Statistics\Models\Back9
+form: $/admin/statistics/models/backnine/fields.yaml
+modelClass: Admin\Statistics\Models\BackNine
 defaultRedirect: admin/statistics/backnine
 create:
     redirect: 'admin/statistics/backnine/update/:id'

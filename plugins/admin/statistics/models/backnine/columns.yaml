@@ -1,11 +1,11 @@
 columns:
-    back_9:
-        label: name
-        type: text
-        searchable: true
-        sortable: true
     id:
         label: id
         type: number
+        searchable: true
+        sortable: true
+    back_nine:
+        label: name
+        type: text
         searchable: true
         sortable: true

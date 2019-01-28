@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Back9 extends Model
+class BackNine extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -19,7 +19,7 @@ class Back9 extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'admin_statistics_back_9';
+    public $table = 'admin_statistics_back_nine';
 
     /**
      * @var array Validation rules

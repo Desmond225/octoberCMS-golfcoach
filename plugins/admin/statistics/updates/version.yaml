@@ -198,3 +198,12 @@
 1.0.67:
     - 'Updated table admin_statistics_back_9'
     - builder_table_update_admin_statistics_back_9_2.php
+1.0.68:
+    - 'Updated table admin_statistics_back_9'
+    - builder_table_update_admin_statistics_back_nine.php
+1.0.69:
+    - 'Updated table admin_statistics_back_nine'
+    - builder_table_update_admin_statistics_back_nine_2.php
+1.0.70:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_20.php

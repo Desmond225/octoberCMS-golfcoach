@@ -42,7 +42,7 @@ navigation:
                 label: 'Course Details'
                 url: /admin/statistics/coursedetails
                 icon: icon-book
-            side-menu-back9:
+            side-menu-back-nine:
                 label: 'Back 9'
-                url: /admin/statistics/back_9
+                url: /admin/statistics/backnine
                 icon: icon-flag

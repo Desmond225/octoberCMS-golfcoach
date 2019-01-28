@@ -1,4 +1,4 @@
 title: BackNine
-modelClass: Admin\Statistics\Models\Back9
+modelClass: Admin\Statistics\Models\BackNine
 toolbar:
     buttons: reorder_toolbar
