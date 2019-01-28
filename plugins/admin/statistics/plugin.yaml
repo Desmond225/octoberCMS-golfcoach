@@ -18,9 +18,13 @@ navigation:
                 label: 'Course venues'
                 url: /admin/statistics/coursevenues
                 icon: icon-flag-checkered
-            side-menu-course-parts:
-                label: 'Course parts'
-                url: /admin/statistics/courseparts
+            side-menu-front-nine:
+                label: 'Front 9'
+                url: /admin/statistics/frontnine
+                icon: icon-flag
+            side-menu-back-nine:
+                label: 'Back 9'
+                url: /admin/statistics/backnine
                 icon: icon-flag
             side-menu-stats:
                 label: Stats
@@ -42,7 +46,3 @@ navigation:
                 label: 'Course Details'
                 url: /admin/statistics/coursedetails
                 icon: icon-book
-            side-menu-back-nine:
-                label: 'Back 9'
-                url: /admin/statistics/backnine
-                icon: icon-flag

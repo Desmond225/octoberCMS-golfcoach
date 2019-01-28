@@ -207,3 +207,9 @@
 1.0.70:
     - 'Updated table admin_statistics_rounds'
     - builder_table_update_admin_statistics_rounds_20.php
+1.0.71:
+    - 'Updated table admin_statistics_course_parts'
+    - builder_table_update_admin_statistics_front_nine.php
+1.0.72:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_21.php

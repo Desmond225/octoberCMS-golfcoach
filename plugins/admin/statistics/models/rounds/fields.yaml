@@ -20,7 +20,7 @@ fields:
         span: auto
         required: 1
         type: dropdown
-    course_part_id:
+    front_nine_id:
         label: 'Front 9'
         span: left
         type: dropdown

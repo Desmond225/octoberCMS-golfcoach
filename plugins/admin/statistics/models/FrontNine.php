@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class CourseParts extends Model
+class FrontNine extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -19,7 +19,7 @@ class CourseParts extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'admin_statistics_course_parts';
+    public $table = 'admin_statistics_front_nine';
 
     /**
      * @var array Validation rules

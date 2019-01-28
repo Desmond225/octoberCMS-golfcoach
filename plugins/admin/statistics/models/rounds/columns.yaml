@@ -52,13 +52,13 @@ columns:
         type: number
         searchable: true
         sortable: true
-    course_part_id:
+    front_nine_id:
         label: 'course part'
         type: number
         searchable: true
         sortable: true
-        select: course_part
-        relation: course_part
+        select: front_nine
+        relation: front_nine
     back_nine_id:
         label: 'course part 2'
         type: number

@@ -1,6 +1,6 @@
-list: $/admin/statistics/models/courseparts/columns.yaml
-modelClass: Admin\Statistics\Models\CourseParts
-title: CourseParts
+list: $/admin/statistics/models/frontnine/columns.yaml
+modelClass: Admin\Statistics\Models\FrontNine
+title: FrontNine
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'admin/statistics/courseparts/update/:id'
+recordUrl: 'admin/statistics/frontnine/update/:id'

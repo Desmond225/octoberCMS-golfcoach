@@ -1,0 +1,10 @@
+name: FrontNine
+form: $/admin/statistics/models/frontnine/fields.yaml
+modelClass: Admin\Statistics\Models\FrontNine
+defaultRedirect: admin/statistics/frontnine
+create:
+    redirect: 'admin/statistics/frontnine/update/:id'
+    redirectClose: admin/statistics/frontnine
+update:
+    redirect: admin/statistics/frontnine
+    redirectClose: admin/statistics/frontnine

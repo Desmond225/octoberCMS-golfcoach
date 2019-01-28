@@ -1,5 +1,5 @@
 fields:
-    course_part:
+    front_nine:
         label: name
         span: auto
         type: text

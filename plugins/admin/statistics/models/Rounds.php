@@ -52,24 +52,14 @@ class Rounds extends Model
         return $teeColors;
     }
 
-    function getFront9IdOptions() {
-        $front9 = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+    function getFrontNineIdOptions() {
+        $front9 = FrontNine::orderBy('front_nine')->lists('front_nine', 'id');
         return $front9;
     }
 
     function getBackNineIdOptions() {
-        $backNine = CourseParts::orderBy('course_part')->lists('course_part', 'id');
+        $backNine = BackNine::orderBy('back_nine')->lists('back_nine', 'id');
         return $backNine;
-    }
-
-    function getCoursePartIdOptions() {
-        $coursePart = CourseParts::orderBy('course_part')->lists('course_part', 'id');
-        return $coursePart;
-    }
-
-    function getCoursePartId2Options() {
-        $coursePart2 = BackNine::orderBy('course_part')->lists('course_part', 'id');
-        return $coursePart2;
     }
 
 
@@ -78,7 +68,7 @@ class Rounds extends Model
     public $belongsTo = [
         'round_type' => ['Admin\Statistics\Models\RoundTypes'],
         'course_venue' => ['Admin\Statistics\Models\CourseVenues'],
-        'course_part' => ['Admin\Statistics\Models\CourseParts'],
+        'front_nine' => ['Admin\Statistics\Models\FrontNine'],
         'back_nine' => ['Admin\Statistics\Models\Backnine'],
         'holes_played' => ['Admin\Statistics\Models\HolesPlayed'],
         'tee_color' => ['Admin\Statistics\Models\Tees'],

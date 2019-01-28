@@ -1,0 +1,4 @@
+title: FrontNine
+modelClass: Admin\Statistics\Models\FrontNine
+toolbar:
+    buttons: reorder_toolbar

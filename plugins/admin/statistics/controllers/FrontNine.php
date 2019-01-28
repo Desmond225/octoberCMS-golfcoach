@@ -3,7 +3,7 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class CourseParts extends Controller
+class FrontNine extends Controller
 {
     public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'    ];
     
@@ -14,6 +14,6 @@ class CourseParts extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-course-parts');
+        BackendMenu::setContext('Admin.Statistics', 'main-menu-item', 'side-menu-front-nine');
     }
 }
