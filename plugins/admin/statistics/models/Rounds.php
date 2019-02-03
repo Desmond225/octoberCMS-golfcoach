@@ -11,9 +11,8 @@ use Admin\Statistics\Models\Courses;
 class Rounds extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    use \October\Rain\Database\Traits\SoftDelete;
 
-    protected $dates = ['deleted_at'];
+    protected $dates = [];
 
     /**
      * @var string The database table used by the model.

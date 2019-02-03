@@ -10,13 +10,10 @@ description = "Mobile layout"
         <title>Golfcoach</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="OctoberCMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
-        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
-        {% styles %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     </head>
     <body>
         {repeater name="sections" groups="~/themes/demo/meta/blocks.yaml" tab="Blocks"}

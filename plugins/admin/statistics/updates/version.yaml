@@ -213,3 +213,9 @@
 1.0.72:
     - 'Updated table admin_statistics_rounds'
     - builder_table_update_admin_statistics_rounds_21.php
+1.0.73:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_22.php
+1.0.74:
+    - 'Updated table admin_statistics_rounds'
+    - builder_table_update_admin_statistics_rounds_23.php

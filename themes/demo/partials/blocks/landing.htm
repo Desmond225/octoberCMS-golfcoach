@@ -3,31 +3,99 @@ snippetCode = "landing"
 snippetName = "landing"
 ==
 
+use Admin\Statistics\Models\Rounds;
+use Admin\Statistics\Models\Stats;
+
+function onStart() {
+
+$this['url'] = url('/rounds').'?';
+$this["rounds"] = Rounds::orderBy('date','DESC')->get();
+$this["stats"] = Stats::get();
+if(Input::get('order')) Session::put('filter.order', Input::get('order'));
+
+$this["order"] = Session::get('filter.order');
+echo(Session::get('filter.page'));
+}
+==
+
 <style>
-body, html {
-    background: rgba(0,255,128, 0.6);
-}
+    .latest-rounds-overview {}
 
-.landing-menu .btn {
-    margin: 25% 0;
-    border-radius: 0%;
-}
+    .statistics-overview {
+        background: rgb(221, 221, 221);
 
-.landing-menu h1::after {
-    content: '';
-    display: block;
-    height: 2px;
-    background: black;
-}
+    }
 </style>
 
 <div class="container">
     <div class="landing-menu">
         <h1>{{data.header}}</h1>
+        <h5>Welcome back, user</h5>
+        <h5>Last log in was on: </h5>
+        <div class="row pt-5">
+            <div class="col-6">
+                <h2>Latest rounds</h2>
+                <div class="container latest-rounds-overview">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"><a href="{{ url }}order=date">Date</a></th>
+                                <th scope="col">Course</th>
+                                <th scope="col"><a href="{{ url }}order=score">Score</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for round in rounds | slice(0,5)%}
+                            {% set score_bruto = round.score %}
+                            {% if round.holes_played.holes_played == 18 %}
+                            {% set score_to_par = score_bruto - 71 %}
+                            {% else %}
+                            {% set score_to_par = score_bruto - 36 %}
+                            {% endif %}
+                            <tr>
+                                <th scope="row">{{round.date}}</th>
+                                <td>{{round.course_venue.course_venue}}</td>
+                                <td>
+                                    {{round.score}}
+                                    {% if score_bruto < 71 %}(-{{score_to_par}}) {% else %} (+{{score_to_par}}) {%
+                                        endif %} </td> </tr> {% endfor %} </tbody> </table> <p class="text-muted text-right">See
+                                        more rounds</p>
+                </div>
+            </div>
+
+            <div class="col-4 offset-2">
+
+                <h2>Statistics over last 20 rounds</h2>
+
+                <div class="container statistics-overview">
+                    <table class="table">
+
+                        <tbody>
+                                {% for statistics in stats %}
+                                    {% set score_bruto = round.score %}
+                                    {% if round.holes_played.holes_played == 18 %}
+                                    {% set fir_data = round.fir / 14 * 100 %}
+                                    {% set gir_data = round.gir / 18 * 100 %}
+                                    {% set score_to_par = score_bruto - 71 %}
+                                    {% else %}
+                                    {% set gir_data = round.gir / 9 * 100 %}
+                                    {% set fir_data = round.fir / 7 * 100 %}
+                                    {% set score_to_par = score_bruto - 36 %}
+                                {% endif %}
+                                <tr>
+                                    <td>{{statistics.name}}</td>
+                                    <td>{{statistics.gir_data}}2</td>
+                                </tr>
+
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         <a href="/entry" class="btn btn-info btn-lg btn-block">{{data.entry}}</a>
         <a href="" class="btn btn-info btn-lg btn-block">{{data.blog}}</a>
         <a href="/rounds" class="btn btn-info btn-lg btn-block">{{data.rounds}}</a>
 
-</div>  
+    </div>
 </div>
-

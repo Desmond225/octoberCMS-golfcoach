@@ -66,3 +66,18 @@ columns:
         sortable: true
         select: back_nine
         relation: back_nine
+    fir:
+        label: FIR
+        type: number
+        searchable: true
+        sortable: true
+    gir:
+        label: GIR
+        type: number
+        searchable: true
+        sortable: true
+    putts:
+        label: putts
+        type: number
+        searchable: true
+        sortable: true

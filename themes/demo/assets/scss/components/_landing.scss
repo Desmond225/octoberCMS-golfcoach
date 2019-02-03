@@ -1,0 +1,22 @@
+.container {
+
+.landing-menu {
+    background: rgb(128,128,128);
+
+    h1 {
+        color: red;
+    }
+}
+}
+
+.landing-menu .btn {
+    margin: 25% 0;
+    border-radius: 0%;
+}
+
+.landing-menu h1::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: black;
+}

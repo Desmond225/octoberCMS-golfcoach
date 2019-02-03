@@ -30,23 +30,58 @@ function onStart() {
         <th scope="col">Tee</th>
         <th scope="col">Holes</th>
         <th scope="col"><a href="{{ url }}order=score">Score</a></th>
+        <th scope="col">To par</th>
         <th scope="col">Type</th>
         <th scope="col">Hcp Old</th>
         <th scope="col">Hcp New</th>
+        <th scope="col">FIR %</th>
+        <th scope="col">GIR %</th>
+        <th scope="col">Putts</th>
 
       </tr>
     </thead>
     <tbody>
         {% for round in rounds %}
+        {% set score_bruto = round.score %}
+        {% if round.holes_played.holes_played == 18 %}
+        {% set fir_data = round.fir / 14 * 100 %}
+        {% set gir_data = round.gir / 18 * 100 %}
+        {% set score_to_par = score_bruto - 71 %}
+        {% else %}
+        {% set gir_data = round.gir / 9 * 100 %}
+        {% set fir_data = round.fir / 7 * 100 %}
+        {% set score_to_par = score_bruto - 36 %}
+        {% endif %}
+
+
+
       <tr>
         <th scope="row">{{round.date}}</th>
-        <td>{{round.course.name}}</td>
+        <td>{{round.course_venue.course_venue}}</td>
         <td>{{round.tee_color.tee_color}}</td>
         <td>{{round.holes_played.holes_played}}</td>
         <td>{{round.score}}</td>
+
+        {% if score_to_par < 0 %}
+        <td style="color: red">{{score_to_par}}</td>
+        {% else %}
+        <td>{{score_to_par}}</td>
+        {% endif %}
+
         <td>{{round.round_type.name}}</td>
         <td>{{round.hcp_old}}</td>
         <td>{{round.hcp_old}}</td>
+        {% if round.fir != 0 %}
+        <td>{{fir_data | number_format(2, '.', '.')}}</td>
+        {% endif %}
+        {% if round.gir != 0 %}
+        <td>{{gir_data | number_format(2, '.', '.')}}</td>
+        {% endif %}
+        {% if round.putts != 0 %}
+        <td>{{round.putts}}</td>
+        {% endif %}
+
+
       </tr>
 
       {% endfor %}
