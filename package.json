@@ -7,6 +7,7 @@
   "dependencies": {
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
+    "@codestackers/webpack": "^0.0.9",
     "animate.css": "^3.7.0",
     "babel-loader": "^8.0.0-beta",
     "babel-plugin-transform-react-jsx": "^6.24.1",

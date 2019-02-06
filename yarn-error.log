@@ -46,8 +46,6 @@ npm manifest:
     },
     "homepage": "https://github.com/desmond225/octoberCMS-golfcoach#readme",
     "devDependencies": {
-      "gulp": "^3.9.1",
-      "gulp-sass": "^3.1.0"
     }
   }
 
