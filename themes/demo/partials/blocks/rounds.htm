@@ -3,14 +3,18 @@ description = "rounds"
 [viewBag]
 snippetCode = "rounds"
 snippetName = "rounds"
+
 ==
 
 use Admin\Statistics\Models\Rounds;
 
 function onStart() {
-
+    $data           = Admin\Statistics\Models\Rounds::getRounds(2018);
+    $this['rounds2018'] = Rounds::getRounds(2018);
+    $this['rounds2017'] = Rounds::getRounds(2017);
+    //dd ($this['rounds']);
     $this['url'] = url('/rounds').'?';
-    $this["rounds"] = Rounds::orderBy('date','DESC')->get();
+    //$this["rounds"] = Rounds::orderBy('date','DESC')->get();
     if(Input::get('order')) Session::put('filter.order', Input::get('order'));
 
     $this["order"] = Session::get('filter.order');
@@ -18,9 +22,12 @@ function onStart() {
 }
 
 ==
+{% component 'Rounds' %}
 
 <div class="container">
 <h1>{{data.header}}</h1>
+
+<button data-request="onRounds2017">Click for 2017 rounds shows</button>
 
 <table class="table table-striped">
     <thead>
@@ -41,7 +48,7 @@ function onStart() {
       </tr>
     </thead>
     <tbody>
-        {% for round in rounds %}
+        {% for round in rounds2017 %}
         {% set score_bruto = round.score %}
         {% if round.holes_played.holes_played == 18 %}
         {% set fir_data = round.fir / 14 * 100 %}
