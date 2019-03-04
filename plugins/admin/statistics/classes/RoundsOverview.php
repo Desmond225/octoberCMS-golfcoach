@@ -1,11 +1,11 @@
 <?php
 namespace Admin\Statistics\Classes;
 use Carbon\Carbon;
-use Session\Session;
+use Session;
 use Admin\Statistics\Models\Rounds;
 
 class RoundsOverview {
-    public $rounds;
+    public $active_rounds;
     public $current_date;
     public $action;
     public $sort_by;

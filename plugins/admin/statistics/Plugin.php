@@ -4,11 +4,19 @@ use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {
+    public function pluginDetails()
+    {
+        return [
+            'name'          => 'Statistics',
+            'description'   => 'Manage statistics',
+            'author'        => 'Terefs',
+            'icon'          => 'icon-map-marker',
+        ];
+    }
     public function registerComponents()
     {
-    }
-
-    public function registerSettings()
-    {
+        return [
+            'Admin\Statistics\Components\Statistics' => 'statistics',
+        ];
     }
 }

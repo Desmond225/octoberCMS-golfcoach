@@ -5,8 +5,10 @@ snippetCode = "rounds"
 snippetName = "rounds"
 
 ==
-
+<?php
 use Admin\Statistics\Models\Rounds;
+use Admin\Statistics\Components\Statistics;
+use Admin\Statistics\Classes\RoundsOverview;
 
 function onStart() {
     $data           = Admin\Statistics\Models\Rounds::getRounds(2018);
@@ -20,14 +22,16 @@ function onStart() {
     $this["order"] = Session::get('filter.order');
     echo(Session::get('filter.page'));
 }
-
+?>
 ==
 {% component 'Rounds' %}
 
 <div class="container">
 <h1>{{data.header}}</h1>
 
-<button data-request="onRounds2017">Click for 2017 rounds shows</button>
+<button data-request="onPreviousPeriod">Previous period</button>
+<button data-request="onCurrentPeriod">Current period</button>
+<button data-request="onNextPeriod">Next period</button>
 
 <table class="table table-striped">
     <thead>

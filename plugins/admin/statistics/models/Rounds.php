@@ -72,32 +72,20 @@ class Rounds extends Model
     ];
 
 
-    public static function getRounds($year) 
+    public static function getRounds() 
     {
-        if($year == 2018)
-        {
+        
         $rounds = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')])->get();
-        $rounds2017 = Rounds::whereBetween('date', [date('2017-01-01'), date('2018-01-01')]);
-        $rounds2018 = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')]);
-        $roundsunder75 = Rounds::where('score', '<', 75);
-        $whitetees = Rounds::where('tee_color_id', '=', '1');
-        $yellowtees = Rounds::where('tee_color_id', '=', '2');
-        $tournaments = Rounds::where('round_type_id', '=', '3');
-        $rounds2018under80 = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')])->where('score', '<', 80);
-
-
-        // $rounds['White tees'] = $whitetees->get()->toarray();
-        // $rounds['Yellow tees'] = $yellowtees->get()->toarray();
-        // $rounds['Tournament rounds'] = $tournaments->get()->toarray();
-        // $rounds['Scores under 75'] = $roundsunder75->get()->toarray();
-        // $rounds['Rounds in 2017'] = $rounds2017->get()->toArray();
-        // $rounds['Rounds in 2018'] = $rounds2018->get()->toArray();
-        // $rounds['Rounds in 2018 under 80'] = $rounds2018under80->get()->toarray();
+        // $rounds2017 = Rounds::whereBetween('date', [date('2017-01-01'), date('2018-01-01')]);
+        // $rounds2018 = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')]);
+        // $roundsunder75 = Rounds::where('score', '<', 75);
+        // $whitetees = Rounds::where('tee_color_id', '=', '1');
+        // $yellowtees = Rounds::where('tee_color_id', '=', '2');
+        // $tournaments = Rounds::where('round_type_id', '=', '3');
+        // $rounds2018under80 = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')])->where('score', '<', 80);
         
         return $rounds;
-        }
-        $rounds = Rounds::whereBetween('date', [date('2017-01-01'), date('2018-01-01')])->get();
-        return $rounds;
+        
     }
 }
 
