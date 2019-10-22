@@ -11,9 +11,9 @@ use Admin\Statistics\Components\Statistics;
 use Admin\Statistics\Classes\RoundsOverview;
 
 function onStart() {
-    $data           = Admin\Statistics\Models\Rounds::getRounds(2018);
-    $this['rounds2018'] = Rounds::getRounds(2018);
-    $this['rounds2017'] = Rounds::getRounds(2017);
+    //$data           = Admin\Statistics\Models\Rounds::getRounds(2018);
+    //$this['rounds2018'] = Rounds::getRounds(2018);
+    //$this['rounds2017'] = Rounds::getRounds(2017);
     //dd ($this['rounds']);
     $this['url'] = url('/rounds').'?';
     //$this["rounds"] = Rounds::orderBy('date','DESC')->get();
@@ -29,11 +29,10 @@ function onStart() {
 <div class="container">
 <h1>{{data.header}}</h1>
 
-<button data-request="onPreviousPeriod">Previous period</button>
-<button data-request="onCurrentPeriod">Current period</button>
-<button data-request="onNextPeriod">Next period</button>
+
 
 <table class="table table-striped">
+
     <thead>
       <tr>
         <th scope="col"><a href="{{ url }}order=date">Date</a></th>
@@ -43,8 +42,8 @@ function onStart() {
         <th scope="col"><a href="{{ url }}order=score">Score</a></th>
         <th scope="col">To par</th>
         <th scope="col">Type</th>
-        <th scope="col">Hcp Old</th>
-        <th scope="col">Hcp New</th>
+        <th scope="col">Hcp old</th>
+        <th scope="col">Hcp new</th>
         <th scope="col">FIR %</th>
         <th scope="col">GIR %</th>
         <th scope="col">Putts</th>
@@ -52,7 +51,9 @@ function onStart() {
       </tr>
     </thead>
     <tbody>
-        {% for round in rounds2017 %}
+        <!-- refactor this in class -->
+        {% for round in rounds %}
+
         {% set score_bruto = round.score %}
         {% if round.holes_played.holes_played == 18 %}
         {% set fir_data = round.fir / 14 * 100 %}
@@ -76,20 +77,26 @@ function onStart() {
         {% if score_to_par < 0 %}
         <td style="color: red">{{score_to_par}}</td>
         {% else %}
-        <td>{{score_to_par}}</td>
+        <td>{%if score_to_par < 0%}-{% elseif score_to_par %}+{% endif %}{{score_to_par}}</td>
         {% endif %}
 
         <td>{{round.round_type.name}}</td>
         <td>{{round.hcp_old}}</td>
-        <td>{{round.hcp_old}}</td>
+        <td>{{round.hcp_new}}</td>
         {% if round.fir != 0 %}
         <td>{{fir_data | number_format(2, '.', '.')}}</td>
+        {% else %}
+        <td>no data</td>
         {% endif %}
         {% if round.gir != 0 %}
         <td>{{gir_data | number_format(2, '.', '.')}}</td>
+        {% else %}
+        <td>no data</td>
         {% endif %}
         {% if round.putts != 0 %}
         <td>{{round.putts}}</td>
+        {% else %}
+        <td>no data</td>
         {% endif %}
 
 
