@@ -1,28 +1,3 @@
-landing:
-  name: landing
-  description: Start section
-  icon: icon-circle
-  fields:
-    section:
-      label: landing page
-      type: section
-      cssClass: 'p-a m-y control-scrollpanel'
-    header:
-      label: Header title
-      type: text
-      span: full
-    entry: 
-      label: Entry label
-      type: text
-      span: full
-    blog:
-      label: Blog label
-      type: text
-      span: full
-    rounds:
-      label: Rounds button label
-      type: text
-      span: full
 entry:
   name: entry
   description: Entry section
@@ -51,6 +26,40 @@ entry:
         9_holes: 9 holes
         18_holes: 18 holes
         span: full
+    entry: 
+      label: Entry label
+      type: text
+      span: full
+    blog:
+      label: Blog label
+      type: text
+      span: full
+    rounds:
+      label: Rounds button label
+      type: text
+      span: full
+menu:
+  name: menu
+  description: Menu section
+  icon: icon-circle
+  fields:
+    section:
+      label: menu page
+      type: section
+      cssClass: 'p-a m-y control-scrollpanel'
+landing:
+  name: landing
+  description: Start section
+  icon: icon-circle
+  fields:
+    section:
+      label: landing page
+      type: section
+      cssClass: 'p-a m-y control-scrollpanel'
+    header:
+      label: Header title
+      type: text
+      span: full
     entry: 
       label: Entry label
       type: text
