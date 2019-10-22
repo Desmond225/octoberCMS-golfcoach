@@ -45,9 +45,9 @@ class Statistics extends ComponentBase
         return $this->render();
     }
 
-    public function getAllRounds()
+    public function getAllRounds2019()
     {
-        return Rounds::getRounds($this->RoundsOverview);
+        return Rounds::getRounds2019($this->RoundsOverview);
     }
 
     public function render()
@@ -55,7 +55,7 @@ class Statistics extends ComponentBase
         return [
             '.table' =>$this->renderPartial('blocks/rounds.htm', [
                 'current_period'    =>      $this->RoundsOverview->currentPeriod(),
-                'rounds'            =>      $this->getAllRounds(),
+                'rounds'            =>      $this->getAllRounds2019(),
             ]),
             ];
     }

@@ -31,12 +31,14 @@ class RoundsOverview {
 
     public function startOfPeriod()
     {
-        return $this->current_date->copy()->startOfYear()->hour(0)->minute(0)->second(0);
+        // return $this->current_date->copy()->startOfYear()->hour(0)->minute(0)->second(0);
+        return '2018-01-01';
     }
 
     public function endOfPeriod()
     {
-        return $this->current_date->copy()->endOfYear()->hour(0)->minute(0)->second(0);
+        // return $this->current_date->copy()->endOfYear()->hour(0)->minute(0)->second(0);
+        return '2019-01-01';
     }
 
     public function currentPeriod()

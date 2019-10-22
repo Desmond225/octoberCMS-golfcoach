@@ -4,11 +4,11 @@ use Model;
 use Admin\Statistics\Models\RoundTypes;
 use Admin\Statistics\Models\Courses;
 use Carbon\Carbon;
+use Admin\Statistics\Classes\RoundsOverview;
 
 /**
  * Model
  */
-
 class Rounds extends Model
 {
     use \October\Rain\Database\Traits\Validation;
@@ -31,12 +31,6 @@ class Rounds extends Model
         $roundTypes = RoundTypes::orderBy('name')->lists('name', 'id');
         return $roundTypes;
     }
-
-    // function getCourseIdOptions() {
-    //     $courseId = CourseDetails::orderBy('name')->lists('name', 'id');
-    //     return $courseId;
-    // }
-
     function getCourseVenueIdOptions() {
         $courseVenue = CourseVenues::orderBy('course_venue')->lists('course_venue', 'id');
         return $courseVenue;
@@ -71,21 +65,13 @@ class Rounds extends Model
         'tee_color' => ['Admin\Statistics\Models\Tees'],
     ];
 
-
-    public static function getRounds() 
+    //need to make this work by not being hard coded in dates
+    public static function getRounds2019($RoundsOverview)
     {
-        
-        $rounds = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')])->get();
-        // $rounds2017 = Rounds::whereBetween('date', [date('2017-01-01'), date('2018-01-01')]);
-        // $rounds2018 = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')]);
-        // $roundsunder75 = Rounds::where('score', '<', 75);
-        // $whitetees = Rounds::where('tee_color_id', '=', '1');
-        // $yellowtees = Rounds::where('tee_color_id', '=', '2');
-        // $tournaments = Rounds::where('round_type_id', '=', '3');
-        // $rounds2018under80 = Rounds::whereBetween('date', [date('2018-01-01'), date('2019-01-01')])->where('score', '<', 80);
-        
-        return $rounds;
-        
+        return Rounds::whereBetween('date', [
+            '2019-01-01',
+            '2020-01-01'
+            ])->get();
     }
 }
 
