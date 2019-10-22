@@ -1,10 +1,12 @@
+const path = require('path');
+
 module.exports = {
-    mode: "development",
     watch: true,
-    entry: "./assets/js/index.js",
+    entry: "./js/index.js",
+    mode: 'development',
     output: {
-      filename: "bundle.js",
-      path: __dirname + "/dist"
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
     },
     resolve: {
       extensions: [".ts", ".jsx", ".js", ".json"]
@@ -20,4 +22,3 @@ module.exports = {
       ]
     }
   };
-  
